@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Recetas 💑</string>
+    <string name="action_search">Buscar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Eliminar</string>
+    <string name="label_recipes">Recetas</string>
+    <string name="label_favorites">Favoritas</string>
+    <string name="label_history">Historial</string>
+</resources>

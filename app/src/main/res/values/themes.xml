@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema base: Siempre modo oscuro con Dark Green -->
+    <style name="Theme.CoupleRecipes" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Colores primarios (Dark Green: #006400) -->
+        <item name="colorPrimary">@color/dark_green</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorPrimaryContainer">#004d00</item>
+        <item name="colorOnPrimaryContainer">#E0FEE0</item>
+
+        <!-- Colores secundarios (rosa pareja oscuro) -->
+        <item name="colorSecondary">#FFB1C0</item>
+        <item name="colorOnSecondary">#67002B</item>
+        <item name="colorSecondaryContainer">#900040</item>
+        <item name="colorOnSecondaryContainer">#FFD9DF</item>
+
+        <!-- Terciario -->
+        <item name="colorTertiary">#99D66F</item>
+
+        <!-- Superficie (Android Dark Mode standard) -->
+        <item name="colorSurface">#1A1C18</item>
+        <item name="colorOnSurface">#E2E3DC</item>
+        <item name="colorSurfaceVariant">#43483E</item>
+        <item name="colorOnSurfaceVariant">#C3C8BB</item>
+        <item name="android:windowBackground">#1A1C18</item>
+
+        <!-- Toolbar -->
+        <item name="actionBarTheme">@style/ThemeOverlay.Material3.Dark.ActionBar</item>
+    </style>
+
+</resources>

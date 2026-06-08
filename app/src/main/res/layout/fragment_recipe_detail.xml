@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="88dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Imagen hero -->
+            <ImageView
+                android:id="@+id/image_recipe"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_recipe_placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Nombre y chip juntos -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/text_recipe_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+                        android:text="Nombre de receta" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_together"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="❤️ Juntos"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <!-- Autor -->
+                <TextView
+                    android:id="@+id/text_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?attr/textAppearanceLabelMedium"
+                    android:textColor="?attr/colorSecondary"
+                    android:text="Por: Yo" />
+
+                <!-- Chips de información -->
+                <com.google.android.material.chip.ChipGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/text_category"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="false"
+                        android:text="Categoría"
+                        app:chipIcon="@drawable/ic_category" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/text_cooking_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="false"
+                        android:text="30 min"
+                        app:chipIcon="@drawable/ic_time" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/text_difficulty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="false"
+                        android:text="Fácil"
+                        app:chipIcon="@drawable/ic_difficulty" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/text_calories"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="false"
+                        android:text="200 kcal"
+                        android:visibility="gone" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+                <!-- Filtros saludables -->
+                <TextView
+                    android:id="@+id/text_health_filters"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?attr/textAppearanceLabelSmall"
+                    android:textColor="@color/md_theme_tertiary"
+                    android:text="🥗 Vegetariana · Baja en calorías"
+                    android:visibility="gone" />
+
+                <!-- Veces cocinada -->
+                <TextView
+                    android:id="@+id/text_times_cooked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="?attr/textAppearanceLabelSmall"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:text="Cocinada 0 veces" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp" />
+
+                <!-- Ingredientes -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:text="🥦 Ingredientes" />
+
+                <TextView
+                    android:id="@+id/text_ingredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:lineSpacingMultiplier="1.4"
+                    android:text="Ingredientes aquí" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="16dp" />
+
+                <!-- Pasos -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:text="👨‍🍳 Preparación" />
+
+                <TextView
+                    android:id="@+id/text_steps"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textAppearance="?attr/textAppearanceBodyMedium"
+                    android:lineSpacingMultiplier="1.6"
+                    android:text="Pasos aquí" />
+
+                <!-- Notas -->
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_notes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:cardBackgroundColor="?attr/colorSecondaryContainer"
+                    app:cardCornerRadius="12dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?attr/textAppearanceTitleSmall"
+                            android:text="💡 Notas" />
+
+                        <TextView
+                            android:id="@+id/text_notes"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textAppearance="?attr/textAppearanceBodySmall"
+                            android:text="Notas aquí" />
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- Botón cocinar -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_mark_as_cooked"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:text="🍽️ ¡Cocinar esta receta!"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- FAB favorito -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_favorite_border"
+        android:contentDescription="Favorito" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

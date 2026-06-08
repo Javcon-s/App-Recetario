@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <!-- Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.couplerecipes.ui.home.HomeFragment"
+        android:label="Recetas">
+        <action
+            android:id="@+id/action_homeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addEditRecipeFragment"
+            app:destination="@id/addEditRecipeFragment" />
+    </fragment>
+
+    <!-- Favoritos -->
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.couplerecipes.ui.favorites.FavoritesFragment"
+        android:label="Favoritas">
+        <action
+            android:id="@+id/action_favoritesFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+
+    <!-- Historial -->
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.couplerecipes.ui.history.HistoryFragment"
+        android:label="Historial">
+        <action
+            android:id="@+id/action_historyFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+
+    <!-- Detalle (accesible desde todas las pantallas) -->
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="com.couplerecipes.ui.detail.RecipeDetailFragment"
+        android:label="Detalle">
+        <action
+            android:id="@+id/action_recipeDetailFragment_to_addEditRecipeFragment"
+            app:destination="@id/addEditRecipeFragment" />
+    </fragment>
+
+    <!-- Agregar/Editar -->
+    <fragment
+        android:id="@+id/addEditRecipeFragment"
+        android:name="com.couplerecipes.ui.add_edit.AddEditRecipeFragment"
+        android:label="Nueva receta" />
+
+</navigation>

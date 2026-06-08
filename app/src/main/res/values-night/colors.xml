@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Modo oscuro -->
+    <color name="md_theme_dark_primary">#99D66F</color>
+    <color name="md_theme_dark_on_primary">#0E3900</color>
+    <color name="md_theme_dark_primary_container">#235106</color>
+    <color name="md_theme_dark_on_primary_container">#B4F391</color>
+
+    <color name="md_theme_dark_secondary">#FFB1C0</color>
+    <color name="md_theme_dark_on_secondary">#67002B</color>
+    <color name="md_theme_dark_secondary_container">#900040</color>
+    <color name="md_theme_dark_on_secondary_container">#FFD9DF</color>
+
+    <color name="md_theme_dark_surface">#1A1C18</color>
+    <color name="md_theme_dark_on_surface">#E2E3DC</color>
+</resources>

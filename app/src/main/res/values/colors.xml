@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Green requested by user -->
+    <color name="dark_green">#006400</color>
+
+    <!-- Dark Mode standard colors and placeholders for existing references -->
+    <color name="md_theme_dark_surface">#1A1C18</color>
+    <color name="md_theme_dark_on_surface">#E2E3DC</color>
+
+    <color name="md_theme_primary">#006400</color>
+    <color name="md_theme_on_primary">#FFFFFF</color>
+    <color name="md_theme_primary_container">#004d00</color>
+    <color name="md_theme_on_primary_container">#E0FEE0</color>
+
+    <color name="md_theme_secondary">#FFB1C0</color>
+    <color name="md_theme_on_secondary">#67002B</color>
+    <color name="md_theme_secondary_container">#900040</color>
+    <color name="md_theme_on_secondary_container">#FFD9DF</color>
+
+    <color name="md_theme_tertiary">#99D66F</color>
+    <color name="md_theme_on_tertiary">#0E3900</color>
+    <color name="md_theme_tertiary_container">#235106</color>
+    <color name="md_theme_on_tertiary_container">#B4F391</color>
+
+    <color name="md_theme_surface">#1A1C18</color>
+    <color name="md_theme_on_surface">#E2E3DC</color>
+    <color name="md_theme_surface_variant">#43483E</color>
+    <color name="md_theme_on_surface_variant">#C3C8BB</color>
+
+    <color name="md_theme_error">#FFB4AB</color>
+    <color name="md_theme_on_error">#690005</color>
+</resources>
