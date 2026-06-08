@@ -1,10 +1,8 @@
-# 💑 CoupleRecipes — App de Recetas Saludables para Parejas
-
-Una aplicación Android moderna para que dos personas gestionen sus recetas saludables juntos.
+#  App de Recetas Saludables con mi pareja
 
 ---
 
-## 🏗️ Arquitectura
+## Arquitectura
 
 ```
 MVVM + Repository Pattern + Room Database
@@ -49,7 +47,7 @@ app/
 
 ---
 
-## 🚀 Cómo ejecutar en Android Studio
+## Cómo ejecutarla en Android Studio
 
 ### Requisitos previos
 - Android Studio Hedgehog (2023.1.1) o superior
@@ -78,7 +76,7 @@ app/
 
 ---
 
-## 📦 Dependencias principales
+## Dependencias principales
 
 | Librería | Versión | Uso |
 |---|---|---|
@@ -92,9 +90,9 @@ app/
 
 ---
 
-## 🎨 Características implementadas
+## Características
 
-### ✅ Funcionalidades principales
+### Funcionalidades principales
 - [x] Crear recetas con nombre, ingredientes, pasos, tiempo, dificultad y categoría
 - [x] Editar y eliminar recetas
 - [x] Marcar como favoritas (toggle)
@@ -106,15 +104,15 @@ app/
 - [x] Campo de calorías aproximadas
 - [x] Campo de notas adicionales
 
-### ✅ Funcionalidad de pareja
+### Funcionalidad de pareja
 - [x] Campo "Autor" (Yo / Mi pareja)
-- [x] Botón "Cocinar" con opción "Solo yo" o "¡Juntos! ❤️"
+- [x] Botón "Cocinar" con opción "Solo yo" o "¡Juntos!"
 - [x] Historial de recetas cocinadas
 - [x] Badge "Juntos" en recetas cocinadas en pareja
 - [x] Estadísticas: total de recetas y cuántas hicieron juntos
 - [x] Contador de veces cocinada por receta
 
-### ✅ UI / Experiencia
+###  UI / Experiencia
 - [x] Material Design 3 completo
 - [x] Modo oscuro automático (DayNight)
 - [x] Navigation Component con Bottom Navigation
@@ -128,7 +126,7 @@ app/
 
 ---
 
-## 🔧 Puntos de extensión futura
+##  Puntos de extensión futura
 
 - **Firebase Sync**: Agregar Firestore para sincronizar recetas entre dispositivos de la pareja
 - **Notificaciones**: Recordatorio semanal "¿Qué cocinan esta semana?"
@@ -140,7 +138,7 @@ app/
 
 ---
 
-## 📝 Descripción de archivos clave
+## Descripción de archivos clave
 
 | Archivo | Responsabilidad |
 |---|---|
@@ -158,7 +156,7 @@ app/
 
 ---
 
-## 🎨 Paleta de colores
+## Paleta de colores
 
 | Token | Color | Uso |
 |---|---|---|
